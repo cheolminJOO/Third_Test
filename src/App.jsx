@@ -7,6 +7,9 @@ export default function App() {
   const newUUID = uuidv4();
 
   const newToDoList = () => {
+    if(!title) {
+      return alert("타이틀을 입력하세요.")
+    }
     const newTodo =  {
     id : newUUID,
     title,
